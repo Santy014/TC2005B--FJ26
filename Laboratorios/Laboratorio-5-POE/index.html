@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <!-- Content -->
+    <p id="par1">Lorem ipsum dolor sit </p>
+    <div id="par2">
+      <p>Parráfo 2 </p>
+    </div>
+     
+    <h1>Películas Famosas</h1>
+    <ul class="list">
+      <li>Titanic</li>
+      <li>Jurassic Park</li>
+      <li>El señor de los Anillos</li>
+      <li>Star Wars</li>
+    </ul>
+
+    <h2>Elementos que se utilizan en desarrollo Web:</h2>
+
+
+    <h3> ¿Por que es una buena practica usar JavaScript para checar que sean validos los inputs de las formas antes de enviar los datos al servidor?</h3>
+    <p> 
+      Porque mejora la experiencia del usuario: le avisas al instante si falta un dato, 
+      si el correo está mal escrito o si una contraseña no cumple reglas, sin esperar la respuesta del servidor. También reduce peticiones innecesarias al backend.
+    </p>
+    <h3> ¿Como puedes saltarte la seguridad de validaciones hechas con JavaScript? </h3>
+    <p> 
+      Se puede saltar fácilmente porque JavaScript corre en el navegador del usuario. Por ejemplo, alguien podría desactivar JavaScript, 
+      modificar el HTML desde las herramientas de desarrollador, cambiar el código de JavaScript, o enviar la petición directamente con herramientas como Postman.
+    </p>
+    <h3> Si te puedes saltar la seguridad de las validaciones de JavaScript, entonces ¿por que la primera pregunta dice que es una buena practica? </h3>
+    <p>
+      Porque validar en JavaScript no es seguro por si mismo, es una capa de comodidad para el usuario y una prevencion temprana. La seguridad real debe estar del lado del servidor, que son aquellas 
+      que van a dar seguridad.
+    </p>
+
+    <h3> Navegación entre paginas utilizando la etiqueta &lt;a&gt;:</h3>
+    <p>
+      La etiqueta &lt;a&gt; sirve para navegar entre páginas internas o externas.
+    </p>
+    
+    <h3> Diferencias entre navegación con formularios (submit) y botones con JavaScript:</h3>
+    <p>
+      Un &lt;form&gt; con submit se usa cuando se quieren enviar datos, Un &lt;button&gt; con JavaScript se usa cuando se quiere controlar la acción manualmente. La principal Diferencias
+      es que el &lt;submit&gt; pertenece al flujo normal de formularios HTML, mientras que el botón con JavaScript depende del código que nosotros escribamos. 
+    </p>
+    
+    <h3> Rutas absolutas y relativas:</h3>
+    <p>
+      Una ruta absoluta empieza desde la raíz del sitio, busca desde el dominio principal al desplegar la pagina, una ruta relativa depende de la ubicación del archivo actual en el que se encuentra, 
+      si el archivo está en otra carpeta, la ruta puede cambiar y romperse.
+    </p>
+
+  </body>
+  <script>
+    let log = console.log;
+    // console.log(document);
+
+    /* Función getElementById */
+    let variablePar = document.getElementById("par1");
+    log(variablePar);
+
+    log("Bandera");
+
+
+    log("Bandera 2");
+
+    log("Bander el bueno...");
+
+    let variablePar2 = document.getElementById("par2");
+    log(variablePar2.innerHTML);
+
+        /* Función querySelector */
+    const h1Element = document.querySelector('h1');
+    log(h1Element);
+
+    const list = document.querySelectorAll("ul > li");
+    
+    list.forEach((item) => {
+        log(item.textContent);
+    });
+
+    /* Función createElement */
+    let listaSinOrden = document.createElement("ul");
+
+    document.body.appendChild(listaSinOrden);
+
+    let elementoLista1 = document.createElement("li");
+    elementoLista1.textContent = "HTML";
+    let elementoLista2 = document.createElement("li");
+    elementoLista2.textContent = "CSS";
+    let elementoLista3 = document.createElement("li");
+    elementoLista3.textContent = "JavaScript";
+
+    listaSinOrden.appendChild(elementoLista1);
+    listaSinOrden.appendChild(elementoLista2);
+    listaSinOrden.appendChild(elementoLista3);
+
+    let newH3 = document.createElement("h3");
+    newH3.textContent = "Hola soy un texto en color negro";
+    document.body.appendChild(newH3);
+
+    const h3 = document.querySelector("h3");
+    h3.style.color = "#32a852";
+
+    /* Eventos */
+    let newButton = document.createElement("button");
+    newButton.textContent = "Mostrar Alerta";
+    newButton.setAttribute("id", "btn");
+    document.body.appendChild(newButton);
+
+    const button = document.getElementById("btn");
+
+    button.addEventListener("click", function() {
+      // alert("¡Hola! Has hecho clic en el botón.");
+      //var result = confirm("Desea continuar?");
+      //log(result);
+
+      Swal.fire({
+        title: 'Error!',
+        text: 'Do you want to continue',
+        icon: 'error',
+        confirmButtonText: 'Cool'
+        });
+    });
+
+  </script>
+</html>
