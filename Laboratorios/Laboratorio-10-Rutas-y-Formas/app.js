@@ -8,7 +8,7 @@ const server = http.createServer((req, res) => {
         case "/":
             res.setHeader("Content-Type", "text/html");
             res.write(`
-                <h1>Este es el índice de la página</h1>
+                <h1>Este es el indice de la pagina</h1>
                 <p>Las rutas existentes son:</p>
                 <ul>
                     <li>/caso1</li>
