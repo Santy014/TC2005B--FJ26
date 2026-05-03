@@ -1,0 +1,27 @@
+Investiga alguno de los ataques de la OWASP Top 10 y realiza un resumen de dicho ataque con sus formas de prevenirlo.
+A05:2025 : Inyección SQL (SQL Injection) — OWASP Top 10
+
+La inyección SQL es una vulnerabilidad que ocurre cuando una aplicación permite que datos ingresados por el usuario se inserten directamente en consultas SQL sin una validación adecuada. Esto permite a un atacante modificar la consulta original y ejecutar comandos maliciosos en la base de datos.
+
+Por ejemplo, un atacante puede introducir una entrada como:
+'OR 1=1'
+lo que provoca que la condición de autenticación siempre sea verdadera, permitiendo acceso no autorizado al sistema.
+
+Formas de prevención
+Uso de consultas parametrizadas, que separan los datos del código SQL.
+Validación de entradas del usuario.
+Uso de librerías que gestionen consultas de forma segura.
+
+Identifica de manera individual para tu proyecto las posibles dependencias de CORS que
+deben solucionar para cuando pongan en producción y explica el por qué de las mismas:
+
+En mi proyecto, CORS sería necesario cuando el frontend y el backend estén separados en producción. 
+Por ejemplo, si el usuario entra primero a una página de login y después accede a la página principal del sistema, 
+esas pantallas harían peticiones al backend para validar credenciales, consultar datos y guardar información.
+
+Debido a esto, el backend debe configurarse para permitir solicitudes únicamente desde el dominio oficial del frontend, evitando 
+accesos desde orígenes no autorizados. CORS permite controlar qué aplicaciones pueden comunicarse con el servidor desde el 
+navegador, lo cual es importante para el correcto funcionamiento del sistema.
+
+En producción, no es recomendable dejar CORS abierto a cualquier dominio, ya que cualquier sitio podría intentar consumir la API. 
+Por ello, se debe restringir a los dominios necesarios y complementar con mecanismos de autenticación para proteger las rutas.
