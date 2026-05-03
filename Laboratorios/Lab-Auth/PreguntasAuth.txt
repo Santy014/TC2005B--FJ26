@@ -1,0 +1,11 @@
+¿Qué otras formas de autentificación existen?
+Además del esquema tradicional de usuario y contraseña, existen distintos métodos de autenticación que incrementan la seguridad 
+de un sistema. Entre ellos se encuentra la autenticación basada en posesión, como los códigos de verificación 
+enviados al teléfono o generados por aplicaciones; así como la autenticación biométrica, que utiliza
+ características únicas del usuario como la huella digital, el reconocimiento facial, de voz o incluso la identificación por retina.
+
+
+También existe la autenticación multifactor (MFA), que combina dos o más mecanismos para ofrecer una mayor protección. 
+Por otro lado, existen opciones como el inicio de sesión mediante cuentas externas (por ejemplo, Apple, Microsoft, Google, Facebook),
+el uso de llaves de seguridad físicas, que utilizan dispositivos moviles (usb). 
+En conjunto, estas alternativas permiten mejorar la seguridad y adaptarse a diferentes necesidades y niveles de protección.
