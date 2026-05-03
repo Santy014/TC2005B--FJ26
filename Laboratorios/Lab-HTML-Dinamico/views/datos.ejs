@@ -1,0 +1,20 @@
+<%- include('partials/head.ejs') %>
+
+<h1>Datos recibidos</h1>
+
+<% if (mensajes.length > 0) { %>
+    <ul>
+        <% for (let item of mensajes) { %>
+            <li>
+                <strong><%= item.nombre %></strong>: <%= item.mensaje %>
+            </li>
+        <% } %>
+    </ul>
+<% } else { %>
+    <h2>No hay mensajes todavía</h2>
+<% } %>
+
+<a href="/formulario/form">Volver al formulario</a>
+
+<a href="/">  Tambien puedes ir a Fill1 </a>
+<%- include('partials/footer.ejs') %>

@@ -1,0 +1,17 @@
+<%- include('partials/head.ejs') %>
+
+<h1>Formulario</h1>
+
+<form action="/formulario/form" method="POST">
+    <label>Nombre:</label>
+    <input type="text" name="nombre">
+
+    <label>Mensaje:</label>
+    <input type="text" name="mensaje">
+
+    <button type="submit">Enviar</button>
+</form>
+
+<a href="/formulario/datos">Ver datos</a>
+
+<%- include('partials/footer.ejs') %>
