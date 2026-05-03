@@ -13,7 +13,7 @@ router.get('/Fill1', (req, res) => {
 });
 
 router.get('/Fill2', (req, res) => {
-    res.send('<h1>Productos</h1> <p> HOLAAAAAAAAA (tercero) </p>');
+    res.send('<h1>Fill2</h1> <p> HOLAAAAAAAAA (tercero) </p>');
 });
 
 module.exports = router;
