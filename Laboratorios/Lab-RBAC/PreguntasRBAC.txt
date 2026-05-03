@@ -1,0 +1,28 @@
+¿En qué consiste el control de acceso basado en roles?
+El control de acceso basado en roles (RBAC) es una metodología de seguridad que restringe el acceso a redes, sistemas o recursos
+según los roles definidos dentro de una organización, en lugar de asignarlo a usuarios individuales
+
+Investiguen y describan 2 sistemas, uno que aplique RBAC y uno que no. Realicen un análisis de las ventajas y desventajas de cada uno con respecto al control de acceso.
+Sistema 1 : Con RBAC
+Un sistema que implementa RBAC puede ser el proyecto del sistema automatizado que estamos desarrollando, donde se definen roles como Empleado, Administrador, Oficial de Cumplimiento y Cliente. Cada rol tiene permisos específicos y los usuarios heredan dichos permisos según el rol asignado.
+
+Ventajas:
+Cuenta con mayor seguridad al limitar el acceso según funciones.
+Permite una gestión de permisos centralizada.
+Reduce errores al evitar asignar permisos de manera individual.
+
+Desventajas:
+Puede volverse complejo si se manejan muchos roles.
+Existe menor flexibilidad para asignar permisos específicos a usuarios individuales.
+
+Sistema 2: Sin RBAC
+Un sistema sin RBAC asigna permisos directamente a cada usuario sin utilizar roles. Por ejemplo, en una aplicación simple, cada usuario puede tener permisos personalizados para ver, editar o eliminar información sin pertenecer a un rol definido.
+
+Ventajas:
+Ofrece mayor flexibilidad al permitir permisos personalizados por usuario.
+Es más sencillo de implementar en sistemas pequeños.
+
+Desventajas:
+Es difícil de escalar cuando hay muchos usuarios.
+Aumenta la probabilidad de errores en la asignación de permisos.
+La administración se vuelve más compleja y puede comprometer la seguridad.
