@@ -1,0 +1,9 @@
+¿Qué beneficios encuentras en el estilo MVC?
+El modelo MVC (Model-View-Controller) facilita la organización de aplicaciones grandes al separar el código en tres partes, lo que permite trabajar en equipo de forma más eficiente y encontrar o modificar secciones sin afectar todo el sistema. También soporta operaciones asíncronas, lo que ayuda a crear aplicaciones más rápidas y flexibles.
+
+Además, permite hacer cambios fácilmente, ya que cada componente es independiente, lo que mejora la escalabilidad. Acelera el desarrollo porque varios desarrolladores pueden trabajar al mismo tiempo en distintas partes. También simplifica la planificación y el mantenimiento al reducir la duplicación de código.
+
+Por último, MVC permite manejar datos sin formato, dándole libertad al desarrollador para decidir cómo presentarlos en diferentes interfaces.
+
+2¿Encuentras alguna desventaja en el estilo arquitectónico MVC?
+El modelo MVC puede resultar innecesariamente complejo para proyectos pequeños, ya que implica una mayor cantidad de archivos y estructura.
