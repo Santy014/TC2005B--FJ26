@@ -1,0 +1,7 @@
+Las modificaciones hechas en el laboratorio fueron las siguientes:
+- Manipulación de estilos (Color de enemigos, canvas, etc.)
+- Manipulación de dificultad (Aumento de velocidad maxima, delay entre spawn de enemigos disminuido)
+- Adición de sonidos (Al moverse hacia cualquier dirección posible y al haber Game Over).
+
+Video con gameplay del videojuego:
+https://youtu.be/6F50Y_ODH_c
